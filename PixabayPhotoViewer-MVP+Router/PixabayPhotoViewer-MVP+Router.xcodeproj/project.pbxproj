@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1A32E329B9A95500F88F31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A32E229B9A95500F88F31 /* AppDelegate.swift */; };
+		FD1A32E529B9A95500F88F31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A32E429B9A95500F88F31 /* SceneDelegate.swift */; };
+		FD1A32EC29B9A95600F88F31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1A32EB29B9A95600F88F31 /* Assets.xcassets */; };
+		FD1A32EF29B9A95600F88F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1A32ED29B9A95600F88F31 /* LaunchScreen.storyboard */; };
+		FD1A32FA29B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A32F929B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterTests.swift */; };
+		FD1A330429B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A330329B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITests.swift */; };
+		FD1A330629B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A330529B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift */; };
+		FD1A332C29B9A9F100F88F31 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331229B9A9EF00F88F31 /* Transitioner.swift */; };
+		FD1A332D29B9A9F100F88F31 /* SearchImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331429B9A9F000F88F31 /* SearchImageRouter.swift */; };
+		FD1A332E29B9A9F100F88F31 /* SearchImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331529B9A9F000F88F31 /* SearchImagePresenter.swift */; };
+		FD1A332F29B9A9F100F88F31 /* SearchImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1A331629B9A9F000F88F31 /* SearchImage.storyboard */; };
+		FD1A333029B9A9F100F88F31 /* SearchImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331829B9A9F000F88F31 /* SearchImageModel.swift */; };
+		FD1A333129B9A9F100F88F31 /* SearchImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331929B9A9F000F88F31 /* SearchImageViewController.swift */; };
+		FD1A333229B9A9F100F88F31 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1A331A29B9A9F000F88F31 /* ImageCell.xib */; };
+		FD1A333329B9A9F100F88F31 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331B29B9A9F000F88F31 /* ImageCell.swift */; };
+		FD1A333429B9A9F100F88F31 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331D29B9A9F000F88F31 /* ImageDetailViewController.swift */; };
+		FD1A333529B9A9F100F88F31 /* ImageDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1A331E29B9A9F000F88F31 /* ImageDetail.storyboard */; };
+		FD1A333629B9A9F100F88F31 /* ImageDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A331F29B9A9F000F88F31 /* ImageDetailModel.swift */; };
+		FD1A333729B9A9F100F88F31 /* ImageDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332029B9A9F000F88F31 /* ImageDetailPresenter.swift */; };
+		FD1A333829B9A9F100F88F31 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332329B9A9F100F88F31 /* Image.swift */; };
+		FD1A333929B9A9F100F88F31 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332529B9A9F100F88F31 /* Session.swift */; };
+		FD1A333A29B9A9F100F88F31 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332729B9A9F100F88F31 /* Pagination.swift */; };
+		FD1A333B29B9A9F100F88F31 /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332829B9A9F100F88F31 /* ItemsResponse.swift */; };
+		FD1A333C29B9A9F100F88F31 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332A29B9A9F100F88F31 /* Request.swift */; };
+		FD1A333D29B9A9F100F88F31 /* SearchImagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A332B29B9A9F100F88F31 /* SearchImagesRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD1A32F629B9A95600F88F31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1A32D729B9A95500F88F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1A32DE29B9A95500F88F31;
+			remoteInfo = "PixabayPhotoViewer-MVP+Router";
+		};
+		FD1A330029B9A95600F88F31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1A32D729B9A95500F88F31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1A32DE29B9A95500F88F31;
+			remoteInfo = "PixabayPhotoViewer-MVP+Router";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD1A32DF29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PixabayPhotoViewer-MVP+Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A32E229B9A95500F88F31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD1A32E429B9A95500F88F31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD1A32EB29B9A95600F88F31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD1A32EE29B9A95600F88F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD1A32F529B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixabayPhotoViewer-MVP+RouterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A32F929B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayPhotoViewer_MVP_RouterTests.swift; sourceTree = "<group>"; };
+		FD1A32FF29B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PixabayPhotoViewer-MVP+RouterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A330329B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayPhotoViewer_MVP_RouterUITests.swift; sourceTree = "<group>"; };
+		FD1A330529B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD1A331229B9A9EF00F88F31 /* Transitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
+		FD1A331429B9A9F000F88F31 /* SearchImageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageRouter.swift; sourceTree = "<group>"; };
+		FD1A331529B9A9F000F88F31 /* SearchImagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImagePresenter.swift; sourceTree = "<group>"; };
+		FD1A331729B9A9F000F88F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchImage.storyboard; sourceTree = "<group>"; };
+		FD1A331829B9A9F000F88F31 /* SearchImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageModel.swift; sourceTree = "<group>"; };
+		FD1A331929B9A9F000F88F31 /* SearchImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageViewController.swift; sourceTree = "<group>"; };
+		FD1A331A29B9A9F000F88F31 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		FD1A331B29B9A9F000F88F31 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		FD1A331D29B9A9F000F88F31 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		FD1A331E29B9A9F000F88F31 /* ImageDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageDetail.storyboard; sourceTree = "<group>"; };
+		FD1A331F29B9A9F000F88F31 /* ImageDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailModel.swift; sourceTree = "<group>"; };
+		FD1A332029B9A9F000F88F31 /* ImageDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailPresenter.swift; sourceTree = "<group>"; };
+		FD1A332329B9A9F100F88F31 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		FD1A332529B9A9F100F88F31 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FD1A332729B9A9F100F88F31 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		FD1A332829B9A9F100F88F31 /* ItemsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
+		FD1A332A29B9A9F100F88F31 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		FD1A332B29B9A9F100F88F31 /* SearchImagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImagesRequest.swift; sourceTree = "<group>"; };
+		FD1A333E29B9AA7B00F88F31 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../PixabayPhotoViewer-MVP+Router1/PixabayPhotoViewer-MVP+Router/PixabayPhotoViewer-MVP+Router/Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD1A32DC29B9A95500F88F31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32F229B9A95600F88F31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32FC29B9A95600F88F31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1A32D629B9A95500F88F31 = {
+			isa = PBXGroup;
+			children = (
+				FD1A32E129B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */,
+				FD1A32F829B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests */,
+				FD1A330229B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests */,
+				FD1A32E029B9A95500F88F31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD1A32E029B9A95500F88F31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A32DF29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router.app */,
+				FD1A32F529B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests.xctest */,
+				FD1A32FF29B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD1A32E129B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A32E229B9A95500F88F31 /* AppDelegate.swift */,
+				FD1A32E429B9A95500F88F31 /* SceneDelegate.swift */,
+				FD1A331C29B9A9F000F88F31 /* ImageDetail */,
+				FD1A332129B9A9F100F88F31 /* Pixabay */,
+				FD1A331329B9A9F000F88F31 /* SearchImage */,
+				FD1A331229B9A9EF00F88F31 /* Transitioner.swift */,
+				FD1A32EB29B9A95600F88F31 /* Assets.xcassets */,
+				FD1A32ED29B9A95600F88F31 /* LaunchScreen.storyboard */,
+				FD1A333E29B9AA7B00F88F31 /* Info.plist */,
+			);
+			path = "PixabayPhotoViewer-MVP+Router";
+			sourceTree = "<group>";
+		};
+		FD1A32F829B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A32F929B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterTests.swift */,
+			);
+			path = "PixabayPhotoViewer-MVP+RouterTests";
+			sourceTree = "<group>";
+		};
+		FD1A330229B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A330329B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITests.swift */,
+				FD1A330529B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift */,
+			);
+			path = "PixabayPhotoViewer-MVP+RouterUITests";
+			sourceTree = "<group>";
+		};
+		FD1A331329B9A9F000F88F31 /* SearchImage */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A331429B9A9F000F88F31 /* SearchImageRouter.swift */,
+				FD1A331529B9A9F000F88F31 /* SearchImagePresenter.swift */,
+				FD1A331629B9A9F000F88F31 /* SearchImage.storyboard */,
+				FD1A331829B9A9F000F88F31 /* SearchImageModel.swift */,
+				FD1A331929B9A9F000F88F31 /* SearchImageViewController.swift */,
+				FD1A331A29B9A9F000F88F31 /* ImageCell.xib */,
+				FD1A331B29B9A9F000F88F31 /* ImageCell.swift */,
+			);
+			path = SearchImage;
+			sourceTree = "<group>";
+		};
+		FD1A331C29B9A9F000F88F31 /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A331D29B9A9F000F88F31 /* ImageDetailViewController.swift */,
+				FD1A331E29B9A9F000F88F31 /* ImageDetail.storyboard */,
+				FD1A331F29B9A9F000F88F31 /* ImageDetailModel.swift */,
+				FD1A332029B9A9F000F88F31 /* ImageDetailPresenter.swift */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		FD1A332129B9A9F100F88F31 /* Pixabay */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A332229B9A9F100F88F31 /* Entity */,
+				FD1A332429B9A9F100F88F31 /* API */,
+			);
+			path = Pixabay;
+			sourceTree = "<group>";
+		};
+		FD1A332229B9A9F100F88F31 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A332329B9A9F100F88F31 /* Image.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FD1A332429B9A9F100F88F31 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A332529B9A9F100F88F31 /* Session.swift */,
+				FD1A332629B9A9F100F88F31 /* Response */,
+				FD1A332929B9A9F100F88F31 /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FD1A332629B9A9F100F88F31 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A332729B9A9F100F88F31 /* Pagination.swift */,
+				FD1A332829B9A9F100F88F31 /* ItemsResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FD1A332929B9A9F100F88F31 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A332A29B9A9F100F88F31 /* Request.swift */,
+				FD1A332B29B9A9F100F88F31 /* SearchImagesRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD1A32DE29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A330929B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+Router" */;
+			buildPhases = (
+				FD1A32DB29B9A95500F88F31 /* Sources */,
+				FD1A32DC29B9A95500F88F31 /* Frameworks */,
+				FD1A32DD29B9A95500F88F31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PixabayPhotoViewer-MVP+Router";
+			productName = "PixabayPhotoViewer-MVP+Router";
+			productReference = FD1A32DF29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD1A32F429B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A330C29B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+RouterTests" */;
+			buildPhases = (
+				FD1A32F129B9A95600F88F31 /* Sources */,
+				FD1A32F229B9A95600F88F31 /* Frameworks */,
+				FD1A32F329B9A95600F88F31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1A32F729B9A95600F88F31 /* PBXTargetDependency */,
+			);
+			name = "PixabayPhotoViewer-MVP+RouterTests";
+			productName = "PixabayPhotoViewer-MVP+RouterTests";
+			productReference = FD1A32F529B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD1A32FE29B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1A330F29B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+RouterUITests" */;
+			buildPhases = (
+				FD1A32FB29B9A95600F88F31 /* Sources */,
+				FD1A32FC29B9A95600F88F31 /* Frameworks */,
+				FD1A32FD29B9A95600F88F31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1A330129B9A95600F88F31 /* PBXTargetDependency */,
+			);
+			name = "PixabayPhotoViewer-MVP+RouterUITests";
+			productName = "PixabayPhotoViewer-MVP+RouterUITests";
+			productReference = FD1A32FF29B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD1A32D729B9A95500F88F31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD1A32DE29B9A95500F88F31 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FD1A32F429B9A95600F88F31 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD1A32DE29B9A95500F88F31;
+					};
+					FD1A32FE29B9A95600F88F31 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD1A32DE29B9A95500F88F31;
+					};
+				};
+			};
+			buildConfigurationList = FD1A32DA29B9A95500F88F31 /* Build configuration list for PBXProject "PixabayPhotoViewer-MVP+Router" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD1A32D629B9A95500F88F31;
+			productRefGroup = FD1A32E029B9A95500F88F31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD1A32DE29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */,
+				FD1A32F429B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterTests */,
+				FD1A32FE29B9A95600F88F31 /* PixabayPhotoViewer-MVP+RouterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD1A32DD29B9A95500F88F31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A32EF29B9A95600F88F31 /* LaunchScreen.storyboard in Resources */,
+				FD1A333529B9A9F100F88F31 /* ImageDetail.storyboard in Resources */,
+				FD1A32EC29B9A95600F88F31 /* Assets.xcassets in Resources */,
+				FD1A332F29B9A9F100F88F31 /* SearchImage.storyboard in Resources */,
+				FD1A333229B9A9F100F88F31 /* ImageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32F329B9A95600F88F31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32FD29B9A95600F88F31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD1A32DB29B9A95500F88F31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A333929B9A9F100F88F31 /* Session.swift in Sources */,
+				FD1A333029B9A9F100F88F31 /* SearchImageModel.swift in Sources */,
+				FD1A333329B9A9F100F88F31 /* ImageCell.swift in Sources */,
+				FD1A333129B9A9F100F88F31 /* SearchImageViewController.swift in Sources */,
+				FD1A333629B9A9F100F88F31 /* ImageDetailModel.swift in Sources */,
+				FD1A32E329B9A95500F88F31 /* AppDelegate.swift in Sources */,
+				FD1A333C29B9A9F100F88F31 /* Request.swift in Sources */,
+				FD1A333829B9A9F100F88F31 /* Image.swift in Sources */,
+				FD1A332E29B9A9F100F88F31 /* SearchImagePresenter.swift in Sources */,
+				FD1A32E529B9A95500F88F31 /* SceneDelegate.swift in Sources */,
+				FD1A332C29B9A9F100F88F31 /* Transitioner.swift in Sources */,
+				FD1A332D29B9A9F100F88F31 /* SearchImageRouter.swift in Sources */,
+				FD1A333A29B9A9F100F88F31 /* Pagination.swift in Sources */,
+				FD1A333429B9A9F100F88F31 /* ImageDetailViewController.swift in Sources */,
+				FD1A333D29B9A9F100F88F31 /* SearchImagesRequest.swift in Sources */,
+				FD1A333729B9A9F100F88F31 /* ImageDetailPresenter.swift in Sources */,
+				FD1A333B29B9A9F100F88F31 /* ItemsResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32F129B9A95600F88F31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A32FA29B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1A32FB29B9A95600F88F31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1A330429B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITests.swift in Sources */,
+				FD1A330629B9A95600F88F31 /* PixabayPhotoViewer_MVP_RouterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD1A32F729B9A95600F88F31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1A32DE29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */;
+			targetProxy = FD1A32F629B9A95600F88F31 /* PBXContainerItemProxy */;
+		};
+		FD1A330129B9A95600F88F31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1A32DE29B9A95500F88F31 /* PixabayPhotoViewer-MVP+Router */;
+			targetProxy = FD1A330029B9A95600F88F31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD1A32ED29B9A95600F88F31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1A32EE29B9A95600F88F31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD1A331629B9A9F000F88F31 /* SearchImage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD1A331729B9A9F000F88F31 /* Base */,
+			);
+			name = SearchImage.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD1A330729B9A95600F88F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD1A330829B9A95600F88F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD1A330A29B9A95600F88F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PixabayPhotoViewer-MVP+Router/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchImage;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD1A330B29B9A95600F88F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PixabayPhotoViewer-MVP+Router/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = SearchImage;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-Router";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD1A330D29B9A95600F88F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-RouterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixabayPhotoViewer-MVP+Router.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixabayPhotoViewer-MVP+Router";
+			};
+			name = Debug;
+		};
+		FD1A330E29B9A95600F88F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-RouterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixabayPhotoViewer-MVP+Router.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixabayPhotoViewer-MVP+Router";
+			};
+			name = Release;
+		};
+		FD1A331029B9A95600F88F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-RouterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixabayPhotoViewer-MVP+Router";
+			};
+			name = Debug;
+		};
+		FD1A331129B9A95600F88F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWY8CP674Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Swift-beginners2.PixabayPhotoViewer-MVP-RouterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PixabayPhotoViewer-MVP+Router";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD1A32DA29B9A95500F88F31 /* Build configuration list for PBXProject "PixabayPhotoViewer-MVP+Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A330729B9A95600F88F31 /* Debug */,
+				FD1A330829B9A95600F88F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A330929B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+Router" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A330A29B9A95600F88F31 /* Debug */,
+				FD1A330B29B9A95600F88F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A330C29B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+RouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A330D29B9A95600F88F31 /* Debug */,
+				FD1A330E29B9A95600F88F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1A330F29B9A95600F88F31 /* Build configuration list for PBXNativeTarget "PixabayPhotoViewer-MVP+RouterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1A331029B9A95600F88F31 /* Debug */,
+				FD1A331129B9A95600F88F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD1A32D729B9A95500F88F31 /* Project object */;
+}
